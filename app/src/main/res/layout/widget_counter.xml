@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#0E141B">
+
+    <ImageView
+        android:id="@+id/increment_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/niko_img_13"
+        android:contentDescription="Incrementa"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/counter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/increment_image"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/niko_img_14"/>
+
+</RelativeLayout>

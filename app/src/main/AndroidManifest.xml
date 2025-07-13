@@ -1,0 +1,210 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thenoikapp">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+
+
+     <application
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:allowBackup="true"
+        android:label="TheNoikApp"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher_niko">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.TheNoikApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Clock Widget-->
+        <receiver android:name=".ClockWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_clock_info" />
+        </receiver>
+        <!--
+        <receiver android:name=".WidgetReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
+                <action android:name="com.example.thenoikapp.TOGGLE_TIME_FORMAT" />
+                <action android:name="android.intent.action.TIME_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <!--Pancake counter-->
+         <receiver android:name=".CounterWidget"
+             android:exported="true" android:label="Pancake counter">
+             <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                 <action android:name="com.example.thenoikapp.INCREMENT" />
+             </intent-filter>
+
+             <meta-data
+                 android:name="android.appwidget.provider"
+                 android:resource="@xml/counter_widget_info" />
+         </receiver>
+
+         <!--MEAW Widget-->
+        <activity android:name=".ChooseImageActivity" android:exported="false"/>
+
+        <receiver android:name=".CustomImageWidget" android:exported="true" android:label="Custom_Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/custom_image_widget_info" />
+        </receiver>
+
+
+
+        <!-- Widget 1 -->
+        <receiver android:name=".NikoWidget1" android:exported="true" android:label="Refuge">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko1" />
+        </receiver>
+
+        <!-- Widget 2 -->
+        <receiver android:name=".NikoWidget2" android:exported="true" android:label="Glen">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko2" />
+        </receiver>
+
+        <!-- Widget 3 -->
+        <receiver android:name=".NikoWidget3" android:exported="true" android:label="Boat">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko3" />
+        </receiver>
+
+        <!-- Widget 4  LOOK AT HOW HAPPY THEY ARE💙💙💙🥞🥞-->
+        <receiver android:name=".NikoWidget4" android:exported="true" android:label="Good Surprise">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko4" />
+        </receiver>
+
+        <!-- Widget 5 =OwO= MEAW-->
+        <receiver android:name=".NikoWidget5" android:exported="true" android:label="The beginning">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko5" />
+        </receiver>
+
+        <!-- Widget 6 -->
+        <receiver android:name=".NikoWidget6" android:exported="true" android:label="Niko">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko6" />
+        </receiver>
+
+        <!-- Widget 7 THE FUNNY BIRD-->
+        <receiver android:name=".NikoWidget7" android:exported="true" android:label="Alula">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko7" />
+        </receiver>
+
+        <!-- Widget 8 -->
+        <receiver android:name=".NikoWidget8" android:exported="true" android:label="Rue">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko8" />
+        </receiver>
+
+        <!-- Widget 9 A GOOD BROTHER-->
+        <receiver android:name=".NikoWidget9" android:exported="true" android:label="Calamus">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko9" />
+        </receiver>
+
+
+        <!-- Widget 10 -->
+        <receiver android:name=".NikoWidget10" android:exported="true" android:label="Proto">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko8" />
+        </receiver>
+
+        <!-- Widget 11 -->
+        <receiver android:name=".NikoWidget11" android:exported="true" android:label="Cedric">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko9" />
+        </receiver>
+
+        <!-- Widget 12 -->
+        <receiver android:name=".NikoWidget12" android:exported="true" android:label="Niko_Bulb">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_niko12" />
+        </receiver>
+
+
+        <!--Widget GIORGE 🎲🎲🎲🎲🎲🎲-->
+        <receiver android:name=".RandomImageWidget" android:exported="true" android:label="George">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.example.thenoikapp.UPDATE_RANDOM_IMAGE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_random_image_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

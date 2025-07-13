@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- HAPPY SOLSTICE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_reproduce_all"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Reproduce all"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/playPauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏯️Pause Play"
+                    android:background="@drawable/custom_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="6dp"/>
+
+                <Button
+                    android:id="@+id/stopButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏹️Stop"
+                    android:background="@drawable/custom_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="6dp"/>
+
+                <Button
+                    android:id="@+id/shuffleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔀Shuffle"
+                    android:background="@drawable/custom_button"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="6dp"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/nikoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/niko_img_5"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#AAAAAA"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SEZIONE LISTE CANZONI -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Colonna 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button android:id="@+id/beep1Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Burden is Light" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep2Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Someplace I Know" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep3Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phosphor" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep4Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Prophecy" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep5Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Abandoned Factory" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep6Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Silverpoint" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep7Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A God's Machine" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep8Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Geothermal" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep9Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distant" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep10Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Into The Light" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep21Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sonder" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep22Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pretty nice day, huh..." android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep23Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Library Stroll" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep24Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simple Secrets" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep25Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Factory" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep31Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thanks For Everything" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep32Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IT'S TIME TO FIGHT CRIME" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep35Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eleventh Hour" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep36Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prelude" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep37Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vestige" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep38Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sonder" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep39Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Out of Protocol" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep40Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Panic" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep47Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Encounter" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep48Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Solstice" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep49Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sunrise" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep50Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="In Memory" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep51Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Homesick" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep57Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Happily Ever After" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+
+            </LinearLayout>
+
+            <!-- Colonna 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button android:id="@+id/beep11Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Self Contained Universe" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep12Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Navigate" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep13Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="To Sleep" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep14Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="To Dream" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep15Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flooded Ruins" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep16Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alula" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep17Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Children of the Ruins" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep18Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="On Little Cat Feet" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep19Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Indoors" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep20Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dark Stairwell" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep26Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Library Nap" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep27Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Tower" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep28Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distant water" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep29Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Niko and the World Machine" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep30Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I'm Here" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep33Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pretty" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep34Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Countdown" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep41Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Collapse" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep42Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Navigate" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep43Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Universe" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep44Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aviator" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep45Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rue" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep46Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Author" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep52Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inventory" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep53Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simpler Secrets" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep54Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Flight" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep55Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Simulation" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep56Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ghost in the Machine" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:id="@+id/beep58Button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Niko's theme" android:background="@drawable/custom_button" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/creditsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer: \nManta (u/idk-____________-)\n \nDesigner: \nManta (u/idk-____________-) \n\n Helper: \n9avlzv3.ecmz (April/Raine) \nsommon1545"
+            android:textColor="#CCCCCC"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>
+
+
