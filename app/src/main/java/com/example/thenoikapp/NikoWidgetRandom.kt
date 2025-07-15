@@ -63,10 +63,15 @@ class RandomImageWidget : AppWidgetProvider() {
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val interval = AlarmManager.INTERVAL_DAY
 
+        alarmManager.setAndAllowWhileIdle(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+            SystemClock.elapsedRealtime() + interval,
+            pendingIntent)
+
+        /* This required alarmManager.canScheduleExactAlarms(), which is only for API 31 (we have 26)
         alarmManager.setExactAndAllowWhileIdle(
             AlarmManager.ELAPSED_REALTIME_WAKEUP,
             SystemClock.elapsedRealtime() + interval,
-            pendingIntent
-        )
+            pendingIntent)
+        )*/
     }
 }

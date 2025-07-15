@@ -1,5 +1,5 @@
 package com.example.thenoikapp
-/*
+
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
@@ -21,9 +21,11 @@ object WidgetUpdater {
         val prefs = context.getSharedPreferences("widget_prefs", Context.MODE_PRIVATE)
         val is24h = prefs.getBoolean("is_24h", true)
 
-        val timeFormat = SimpleDateFormat(if (is24h) "HH:mm" else "hh:mm a", Locale.getDefault())
-        val dateFormat = SimpleDateFormat("MM/dd", Locale.getDefault())
-        val dayFormat = SimpleDateFormat("EEE", Locale.getDefault())
+
+        val defaultLocale = Locale.getDefault()
+        val timeFormat = SimpleDateFormat(if (is24h) "HH:mm" else "hh:mm a", defaultLocale) // don't forget to change from seconds back to "HH:mm"
+        val dateFormat = SimpleDateFormat("MM/dd", defaultLocale)
+        val dayFormat = SimpleDateFormat("EEE", defaultLocale)
         val calendar = Calendar.getInstance()
         val time = timeFormat.format(calendar.time)
         val date = dateFormat.format(calendar.time)
@@ -50,6 +52,8 @@ object WidgetUpdater {
 
             manager.updateAppWidget(id, views)
         }
+
+
     }
 
     fun createBitmapWithFont(context: Context, text: String, sizeSp: Float): Bitmap {
@@ -104,4 +108,3 @@ object WidgetUpdater {
         }
     }
 }
-*/
