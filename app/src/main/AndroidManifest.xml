@@ -34,6 +34,13 @@
                 android:resource="@xml/widget_clock_info" />
         </receiver>
 
+         <receiver android:name=".BootReceiver"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+             </intent-filter>
+         </receiver>
+
          <!-- Widget Receiver-->
          <receiver android:name=".WidgetReceiver"
              android:exported="true">
