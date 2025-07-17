@@ -167,7 +167,17 @@
             android:id="@+id/creditsText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Developer: \nManta (u/idk-____________-)\n \nDesigner: \nManta (u/idk-____________-) \n\n Helper: \n9avlzv3.ecmz (April/Raine) \nsommon1545"
+            android:text="
+Developer:
+\n Manta (u/idk-____________-)
+\n Silly Waffles
+\n\nDesigner:
+\nManta (u/idk-____________-)
+\n sunny-sideleft
+\n\n Helper:
+\n9avlzv3.ecmz (April/Raine)
+\n sommon1545
+"
             android:textColor="#CCCCCC"
             android:textSize="17sp"
             android:gravity="center"

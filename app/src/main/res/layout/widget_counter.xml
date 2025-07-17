@@ -23,6 +23,6 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/increment_image"
         android:layout_marginStart="16dp"
-        android:background="@drawable/niko_img_14"/>
+        android:background="@raw/niko_img_14"/>
 
 </RelativeLayout>

@@ -11,6 +11,7 @@
         android:label="TheNoikApp"
         android:supportsRtl="true"
         android:icon="@mipmap/ic_launcher_niko">
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.TheNoikApp"
@@ -20,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Update-->
+         <service
+             android:name=".ClockUpdateService"
+             android:exported="false" />
+
+         <!--BootDetection-->
+         <receiver
+             android:name=".BootReceiver"
+             android:enabled="true"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+             </intent-filter>
+         </receiver>
 
         <!--Clock Widget-->
         <receiver android:name=".ClockWidget"
